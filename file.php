@@ -6,7 +6,7 @@
     /*print("$nome, $cognome, $data, $password");*/
 
 $inp = array($nome, $cognome, $data, $password);
-$file = "C:\Users\Luca­_Martini\Documents\GitHub\boiling-anchorage-56039\save.php";
+$file = "save.php";
 
 
 $fp = fopen($file, "a");
@@ -18,6 +18,7 @@ foreach($inp as $i)
     $i = addslashes($i);
     fwrite($fp, $i." ");
 }
+
 
 
 fclose($fp);
