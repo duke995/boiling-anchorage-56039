@@ -10,13 +10,13 @@ $file = "C:\Users\Luca­_Martini\Documents\GitHub\boiling-anchorage-56039\save.p
 
 
 $fp = fopen($file, "a");
-fwrite($file, "\n");
+fwrite($fp, "\n");
 
 foreach($inp as $i)
 {
     $i = trim($i);
     $i = addslashes($i);
-    fwrite($file, $i." ");
+    fwrite($fp, $i." ");
 }
 
 
