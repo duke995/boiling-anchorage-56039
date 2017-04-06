@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+            <link rel="stylesheet" href="stile.css">
+            <script src="file.js"></script>
+    </head>
+
+    <body>
+        
+     <ul>
+        <li>
+            <a class="active" href="Pagina1.html">Home</a>
+        </li>
+         
+         <li style="float:right">
+                 <form onsubmit="return validateLogin(this)" id="forminp" name="forminp">
+                     <table>
+                         <tr>
+                             <input id="email" type="text" name="inpemail" placeholder="Email">
+                         </tr>
+                        <tr>
+                            <input id="password" type="password" name="inppassword" placeholder="Password">
+                         </tr>
+                        <tr>
+                            <input class="submlog" type="submit" value="Login" name="login" />
+                         </tr>
+                     </table>
+                  </form>
+         </li>
+    </ul>
+    
+        
+    <h3>Iscrizione Al Sito</h3>
+        <div class="box">   
+            <form action="file.php" method="post" onsubmit="return validateForm(this)" id="form1" name="form1">
+                <table class="tableborder">
+                    <tr>
+                        <td>Nome</td>
+                        <td><input name="name" size="24" /></td>
+                    </tr>
+                    <tr>
+                        <td>Cognome</td>
+                        <td><input name="surname" size="24"/></td>
+                    </tr>
+                    <tr>
+                        <td>Data di nascita (GG/MM/AAAA)</td>
+                        <td><input name="date" size="24" /></td>
+                    </tr>
+                    <tr>
+                        <td>Indirizzo Email</td>
+                        <td><input name="email" size="24" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input name="password" type="password" size="24" /></td>
+                    </tr>
+                    <tr>
+                        <td>Conferma Password</td>
+                        <td><input name="conferma" type="password" size="24" /></td>
+                    </tr>
+                    <tr>
+                        <td>Sesso</td>
+                        <td>
+                            <input type="radio" name="sesso" value="M">M
+                            <input type="radio" name="sesso" value="F">F
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Città</td>
+                        <td>
+                          <select name="citta">
+                            <option>Seleziona la tua città</option>
+                            <option value="Roma">Bologna</option>
+                            <option value="Milano">Firenze</option>
+                            <option value="Genova">Genova</option>
+                            <option value="Napoli">Milano</option>
+                            <option value="Firenze">Napoli</option>
+                            <option value="Bologna">Roma</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="centro">
+                        <input class="subm" type="submit" value="Iscriviti" name="submit" />
+                    </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <footer>
+            <p class="pf">In lavorazione</p>
+        </footer>
+    </body>
+</html>

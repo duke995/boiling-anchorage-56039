@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+            <link rel="stylesheet" href="stile.css">
+            <script src ="file.js"></script>
+    </head>
+    
+    <body>
+
+        <ul>
+            <li>
+                <a class="active" href="Pagina1.html">Home</a>
+            </li>
+        </ul>
+    
+        <h1 class="pg1">Benvenuto</h1>
+            <p class="par">Se non sei ancora iscritto affrettati!</p>
+        
+        <div class="fm">   
+            <form onsubmit="return insertLogin(this)" id="form" name="form">
+                <table class="tableborder1">
+                    <tr>
+                        <td><input id="email" type="text" name="emaillog" placeholder="Email" size="24" /></td>
+                    </tr>
+                    <tr>
+                       <td><input id="password" type="password" name="passwordlog" placeholder="Password" size ="24" /></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" />Ricordami</td>
+                    </tr>
+                    <tr>
+                        <td><input class="loginb" type="submit" value="Login" name="login"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="iscriv" type="button" onclick="document.location.href='Pagina2.html';" value="Iscriviti"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <p class="divis"></p>
+      
+        <footer>
+            <p class="pf">In lavorazione</p>
+        </footer>
+    </body>
+</html>
